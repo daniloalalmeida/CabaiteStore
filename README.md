@@ -44,8 +44,8 @@ Tarefas:
       Venda/Pedido;
           
       Montagem; //Agromerado de componentes que formam o produto computador;
-           
-3. Menu
+
+
       Cadastro:
       
            Pessoas;
@@ -63,9 +63,20 @@ Tarefas:
            
            Produtos;
             
+
+      Edita:
+      
+            Pessoas;
             
+            Produtos.
             
       
-    
+      Remove:
+      
+            Pessoas;
+            
+            Venda/Pedidos;
+            
+            Produtos.
     
     
