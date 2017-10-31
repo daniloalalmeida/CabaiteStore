@@ -3,7 +3,7 @@ Projeto Loja Cabaite
 
 Para dia 07/11 - Entregar:
 
-      Banco de dados;
+      Banco de dados (CRIADO);
       
       Protótipo das telas:
       
@@ -19,8 +19,6 @@ Para dia 07/11 - Entregar:
 Abrir o sistema no datashow e apresentar como funciona.
 
 Tarefas:
-
-0. CRIAR BANCO DE DADOS;
 
 1.  Criar classes:
 
