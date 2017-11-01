@@ -3,14 +3,14 @@ USE lojaCabaitePOO;
 
 CREATE TABLE pessoa
 	(id_pessoa integer(6) PRIMARY KEY,
-     	Nome varchar(100) NOT null,
+     	nome varchar(100) NOT null,
      		endereco varchar(300) NOT null,
      			cpf integer(11) NOT null,
      				telefone integer(11) NOT null,
     					sexo enum('F', 'M') NOT null);
 CREATE	TABLE produto
 	(id_produto integer(6) PRIMARY KEY,
-     	Descricao varchar(300) NOT null,
+     	descricao varchar(300) NOT null,
      		garantia datetime NOT null,
      			tipo varchar(50) NOT null,
      				quantidade decimal(6,2) NOT null,
