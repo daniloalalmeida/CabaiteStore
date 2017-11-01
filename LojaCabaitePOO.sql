@@ -28,9 +28,8 @@ CREATE TABLE itens_pedido
 	(numero_pedido integer(6), 
 	 	id_produto integer(6),
 	 		quantidade decimal(6,2) unsigned NOT null,
-	 			CONSTRAINT PK_numero_pedido PRIMARY KEY (numero_pedido),
-    					CONSTRAINT FK_numero_pedido FOREIGN KEY (numero_pedido) REFERENCES pedido (numero_pedido),
-						CONSTRAINT FK_id_produto FOREIGN KEY (id_produto) REFERENCES produto (id_produto));
+	 			CONSTRAINT FK_numero_pedido FOREIGN KEY (numero_pedido) REFERENCES pedido (numero_pedido),
+					CONSTRAINT FK_id_produto FOREIGN KEY (id_produto) REFERENCES produto (id_produto));
 
 #DADOS
 
@@ -42,7 +41,4 @@ INSERT INTO `produto` (`id_produto`, `descricao`, `garantia`, `tipo`, `preco_uni
 INSERT INTO `produto` (`id_produto`, `descricao`, `garantia`, `tipo`, `preco_unitario`) VALUES ('2', 'SSD', '2017.11.01', 'hardware', '500');
 INSERT INTO `produto` (`id_produto`, `descricao`, `garantia`, `tipo`, `preco_unitario`) VALUES ('3', 'GPU', '2017.11.01', 'hardware', '1000');
 
-INSERT INTO `itens_pedido` (`itens_pedido`, `quantidade`, `id_produto`) VALUES ('1', '10', '1');
-INSERT INTO `itens_pedido` (`itens_pedido`, `quantidade`, `id_produto`) VALUES ('2', '20', '2');
-INSERT INTO `itens_pedido` (`itens_pedido`, `quantidade`, `id_produto`) VALUES ('3', '5', '3');
-										
+
