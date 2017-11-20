@@ -5,14 +5,14 @@ CREATE TABLE pessoa
 	(id_pessoa integer(6) PRIMARY KEY AUTO_INCREMENT,
      		nome varchar(100) NOT null,
 	 		endereco varchar(300) NOT null,
-	 			cpf integer(11) NOT null UNIQUE,
-     					telefone integer(11) NOT null,
-    						sexo enum('F', 'M') NOT null);
+	 			cpf varchar(20) NOT null UNIQUE,
+     					telefone varchar(20) NOT null,
+    						sexo varchar(2) NOT null);
 					
 CREATE	TABLE produto
 	(id_produto integer(6) PRIMARY KEY AUTO_INCREMENT, 
-     	descricao varchar(300) NOT null, 
-     		preco_unitario decimal(6,2) NOT null);			
+     		descricao varchar(300) NOT null, 
+     			preco_unitario decimal(6,2) NOT null);			
 		
 CREATE TABLE pedido
      (numero_pedido integer(6) PRIMARY KEY,
