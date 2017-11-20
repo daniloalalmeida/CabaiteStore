@@ -12,7 +12,8 @@ CREATE TABLE pessoa
 CREATE	TABLE produto
 	(id_produto integer(6) PRIMARY KEY AUTO_INCREMENT, 
      		descricao varchar(300) NOT null, 
-     			preco_unitario decimal(6,2) NOT null);			
+	 		marca varchar(200) NOT null, 
+     				preco_unitario decimal(6,2) NOT null);			
 		
 CREATE TABLE pedido
      (numero_pedido integer(6) PRIMARY KEY,
