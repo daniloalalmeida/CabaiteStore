@@ -18,7 +18,7 @@ CREATE	TABLE produto
 CREATE TABLE pedido
      (numero_pedido integer(6) PRIMARY KEY,
       	NF integer(6) AUTO_INCREMENT UNIQUE,
-      		data_pedido date NOT null,
+      		data_pedido varchar(20) NOT null,
       			id_pessoa integer(6),
       				CONSTRAINT FK_id_pessoa FOREIGN KEY (id_pessoa) 								
 					REFERENCES pessoa (id_pessoa));
