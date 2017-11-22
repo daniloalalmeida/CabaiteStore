@@ -73,18 +73,12 @@ CREATE TABLE pedido
       				CONSTRAINT FK_id_pessoa FOREIGN KEY (id_pessoa) 								
 					REFERENCES pessoa (id_pessoa));
 					
-CREATE TABLE itens_pedido
-	(numero_pedido integer(6),
-     		id_produto integer(6), 
-     			preco_unitario decimal(6,2),
-	 				descricao varchar(300),
-     						quantidade integer(6) unsigned NOT null, 
 CREATE TABLE itens_pedido (
 	numero_pedido integer(6), 
 	preco_unitario decimal(6,2), 
 	descricao varchar(300), 
 	quantidade integer(6) unsigned NOT null, 
-	CONSTRAINT FK_numero_pedido FOREIGN KEY (numero_pedido) REFERENCES pedido (numero_pedido))
+	CONSTRAINT FK_numero_pedido FOREIGN KEY (numero_pedido) REFERENCES pedido (numero_pedido));
 
 	 
 	 
